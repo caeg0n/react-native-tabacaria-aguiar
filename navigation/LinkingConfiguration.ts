@@ -27,6 +27,31 @@ const linking: LinkingOptions<RootStackParamList> = {
           },
         },
       },
+      Costumer: {
+        screens: {
+          CostumerScreen: 'cliente',
+        },
+      },
+      Product: {
+        screens: {
+          ProductScreen: 'produto',
+        },
+      },
+      Sale: {
+        screens: {
+          SaleScreen: 'vendas',
+        },
+      },
+      Report: {
+        screens: {
+          ReportScreen: 'relatorio',
+        },
+      },
+      Home: {
+        screens: {
+          HomeScreen: 'inicio',
+        },
+      },
       Modal: 'modal',
       NotFound: '*',
     },

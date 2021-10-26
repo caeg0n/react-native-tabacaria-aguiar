@@ -16,6 +16,11 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import CostumerScreen from '../screens/CostumerScreen';
+import ProductScreen from '../screens/ProductScreen';
+import SaleScreen from '../screens/SaleScreen';
+import ReportScreen from '../screens/ReportScreen';
+import HomeScreen from '../screens/HomeScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -24,7 +29,7 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
     <NavigationContainer
       linking={LinkingConfiguration}
       theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <RootNavigator />
+      <RootNavigator/>
     </NavigationContainer>
   );
 }
@@ -40,6 +45,11 @@ function RootNavigator() {
     <Stack.Navigator>
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      <Stack.Screen name="Costumer" component={CostumerScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Product" component={ProductScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Sale" component={SaleScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Report" component={ReportScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'wwww' }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>
@@ -66,7 +76,7 @@ function BottomTabNavigator() {
         name="TabOne"
         component={TabOneScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
+          title: 'TABACARIA AGUIAR',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Pressable
