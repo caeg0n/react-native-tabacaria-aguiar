@@ -16,7 +16,7 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
-import CostumerScreen from '../screens/CostumerScreen';
+import CostumerScreen from '../screens/CostumerScreen.js';
 import ProductScreen from '../screens/ProductScreen';
 import SaleScreen from '../screens/SaleScreen';
 import ReportScreen from '../screens/ReportScreen';
